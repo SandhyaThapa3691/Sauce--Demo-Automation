@@ -1,7 +1,7 @@
-from .base_page import BasePage
+from . import base_page
 import allure
 
-class ProductPage(BasePage):
+class ProductPage(base_page.BasePage):
     ADD_TO_CART_BUTTON = "//input[@id='add']"
     PRODUCT_IMAGE = "//img[@id='feature-image']"
 

@@ -23,7 +23,7 @@ class SauceLabsTest:
         chrome_options.add_argument("--disable-dev-shm-usage")
 
 
-        service = Service('/Users/sandhya/Downloads/chromedriver-mac-arm64 2/chromedriver')
+        service = Service(r"C:\Users\prett\Documents\chromedriver-win32")
         self.driver = webdriver.Chrome(service=service, options=chrome_options)
         self.home_page = HomePage(self.driver)
         self.product_page = ProductPage(self.driver)
