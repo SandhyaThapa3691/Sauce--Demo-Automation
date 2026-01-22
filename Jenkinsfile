@@ -4,13 +4,13 @@ pipeline {
     stages {
         stage('Install Dependencies') {
             steps {
-                sh 'python3 -m pip install -r requirements.txt'
+                bat 'C:\\Users\\prett\\AppData\\Local\\Programs\\Python\\Python314\\python.exe -m pip install -r requirements.txt'
             }
         }
 
         stage('Run Tests') {
             steps {
-                sh 'python3 -m pytest -q'
+                bat 'C:\\Users\\prett\\AppData\\Local\\Programs\\Python\\Python314\\python.exe -m pytest -q'
             }
         }
     }
