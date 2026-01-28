@@ -23,8 +23,7 @@ class SauceLabsTest:
 
 
 
-        service = Service(r"C:\Users\prett\Documents\chromedriver-win32")
-        self.driver = webdriver.Chrome(service=service, options=chrome_options)
+        self.driver = webdriver.Chrome(options=chrome_options)
         self.home_page = HomePage(self.driver)
         self.product_page = ProductPage(self.driver)
         self.cart_page = CartPage(self.driver)
